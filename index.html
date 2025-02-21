@@ -12,16 +12,127 @@
 
     <!-- komentar, tidak ditampilkan pada browser (CTRL+/) -->
     <!-- heading 1 sampai 6 -->
-     <h1>Judul</h1>
-     <h2>Judul</h2>
-     <h3>Judul</h3>
-     <h4>Judul</h4>
-     <h5>Judul</h5>
-     <h6>Judul</h6>
+    <h1>Judul</h1>
+    <h2>Judul</h2>
+    <h3>Judul</h3>
+    <h4>Judul</h4>
+    <h5>Judul</h5>
+    <h6>Judul</h6>
 
-     <!-- menampilkan gambar -->
-      <img src="images/rubicon.jpeg" alt="">
-      width="100%"
+    <!-- menampilkan gambar -->
+    <img src="images/rubicon.jpeg" alt="Banner" width="100%">
 
+    <!-- links -->
+    <!-- br untuk turun 1 baris -->
+    <!--target="_blank" digunakan jika klik link akan muncul tab baru  -->
+    <a href="https://mdp.co.id">MDP IT Store</a> <br> 
+    <a href="https://mdp.ac.id" target="_blank">Universitas MDP</a> <br>
+
+    <!-- link gambar contoh sosmed/instagram -->
+    <a href="https://www.instagram.com/" target="_blank">
+        <img src="images/instagram.png" alt="Unduh Aplikasi">
+    </a>
+    
+    <!-- tabel -->
+    <table border="1">
+        <!-- membuat baris (samping)-->
+         <tr>
+            <!-- membuat kolom (bawah), letaknya didalam baris -->
+             <td>Nama</td>
+             <td>NPM</td>
+             <td>Email</td>
+             <td>Foto</td>
+         </tr>
+         <tr>
+            <td>Nayah</td>
+            <td>2428250080P</td>
+            <td>rizqiinayaaah@gmail.com</td>
+            <td>
+                <img src="images/peanut.jpg" alt="" width="80px">
+            </td>
+         </tr>
+    </table>
+         <!-- colspan tabel digabung kesamping, rowspan tabel gabung ke bawah -->
+    <h2>Colspan</h2>
+    <table border="1">
+        <!-- 2 kolom pada baris pertama digabung (keatas)-->
+         <tr>
+            <td colspan="2">Jenis Kelamin</td>
+         </tr>
+         <tr>
+            <td>Laki</td>
+            <td>Perempuan</td>
+         </tr>
+    </table>
+
+    <h2>Rowspan</h2>
+    <table border="1">
+        <!-- 2 baris pada kolom pertama digabung (kebawah) -->
+         <tr>
+            <td rowspan="2">IF21</td>
+            <td>Nayah</td>
+         </tr>
+         <tr>
+            <td>Peanut</td>
+         </tr>
+    </table>
+
+    <h2>Latihan Colspan dan Rowspan</h2>
+    <table border="1">
+        <tr>
+            <td rowspan="2">No.</td>
+            <td rowspan="2">Nama</td>
+            <td colspan="3">Nilai</td>
+        </tr>
+        <tr>
+            <td>UTS</td>
+            <td>UAS</td>
+            <td>Tugas</td>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>Nayah</td>
+            <td>100</td>
+            <td>100</td>
+            <td>99</td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>Peanut</td>
+            <td>90</td>
+            <td>100</td>
+            <td>95</td>
+        </tr>
+        <tr>
+            <td colspan="2">Rata-rata</td>
+            <td>95</td>
+            <td>100</td>
+            <td>97</td>
+        </tr>
+    </table>
+
+    <!-- formulir -->
+    <!-- action untuk proses data yang kita input akan diarahkan kemana jika terdapat tombol  -->
+    <!-- required untuk diwajibkan mengisi data -->
+     <h2>Formulir</h2>
+     <form action="proses.php" method="post">
+        Nama <br>
+        <input type="text" name="nama" id="nama" required><br>
+        Email <br>
+        <input type="email" name="email" id="email"><br>
+        Jenis Kelamin <br>
+        <input type="radio" name="jk" id="" value="L"> Laki-laki
+        <input type="radio" name="jk" id="" value="P"> Perempuan 
+        <input type="radio" name="jk" id="" value="M"> Mix <br>
+        Tempat Lahir <br>
+        <select name="tempat_lahir" id="tempat_lahir">
+            <option value="PLB">Palembang</option>
+            <option value="DBI">Dubai</option>
+            <option value="SGN">Singapore</option>
+        </select> <br>
+        Tanggal Lahir <br>
+        <input type="date" name="tanggal_lahir" id="tanggal_lahir"> <br>
+        <button type="submit">Simpan</button>
+     </form>
 </body>
 </html>
