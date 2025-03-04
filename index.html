@@ -2,16 +2,45 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=<>, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Belajar HTML</title>
+    <!-- internal css -->
+     <style>
+        /* element selector */
+        /* body {
+            background-color: #fff000;
+            font-family: 'calibri';
+            } 
+        */
+        /* class selector */
+        /* .text-danger {
+            color: red;
+            }
+        */
+
+        .bg-success{
+            background-color: green;
+        }
+
+        .text-warning{
+            color: blueviolet;
+        }
+
+        bg.primary{
+            background-color: blue;
+        } */
+     </style>
+     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <h1>Selamat Datang</h1>
-    <hr><a href="index.html">Home</a>
-    <a href="profil.html">Profile</a>
-    <a href="hubungi.html">Hubungi Kami</a>
-    <p>Hari ini belajar Github, HTML, dan Deploy ke Vercel</p>
-    <p>Belajar Web menyenangkan</p>
+    <!-- inline css -->
+    <h1 style="color: blue;">Selamat Datang</h1>
+    <hr>
+    <a href="index.html">Home</a> |
+    <a href="profil.html">Profile</a> |
+    <a href="hubungi.html">Hubungi Kami</a> <hr>
+    <p class="text-danger bg success">Hari ini belajar Github, HTML, dan Deploy ke Vercel</p>
+    <p class="text-warming bg primary p-1 m-1 rounded">Belajar Web menyenangkan</p>
 
     <!-- komentar, tidak ditampilkan pada browser (CTRL+/) -->
     <!-- heading 1 sampai 6 -->
