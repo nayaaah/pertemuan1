@@ -1,0 +1,52 @@
+/* bintang gunanya untuk seluruh elemen yang ada */
+* {
+    box-sizing: border-box;
+}
+
+/* style untuk hp */
+body {
+    background-color: red;
+}
+
+img {
+    width: 100%;
+}
+
+.p-2 {
+    padding: 20px;
+}
+
+/* untuk gambar yang berantakan karna beda bentuk */
+.row::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+/* style untuk tablet */
+@media screen and (min-width: 600px) {
+    body {
+        background-color: green;
+    }
+
+    .col-md-6 {
+        width: 50%;
+        background-color: yellow;
+        float: left;
+    }
+}
+
+/* style untuk desktop */
+@media screen and (min-width: 992px) {
+    body { /* body disebut element selector */
+        background-color: blue;
+    }
+    /*style colektor*/
+    .col-lg-3 {
+        width: 25%;
+        background-color: yellow;
+    /* gunakan float untuk membuat kolom menjadi ke samping kiri */
+        float: left;
+    } 
+
+}
